@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F28482"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvIniciasesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvIniciodesesion"
+        android:textAlignment="center"
+        android:textColor="#F5F5F5"
+        android:textSize="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvCorreo"
+        android:textColor="#F5F5F5"
+        android:textSize="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F5F5F5"
+        android:backgroundTint="#F5F5F5"
+        android:ems="10"
+        android:hint="@string/etCorreo"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:radius="16dp"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="@color/azul" />
+
+    <TextView
+        android:id="@+id/tvConstraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvContraseña"
+        android:textColor="#F5F5F5"
+        android:textSize="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/etContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F5F5F5"
+        android:backgroundTint="#F5F5F5"
+        android:ems="10"
+        android:hint="@string/etContraseña"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:radius="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/azul" />
+
+    <TextView
+        android:id="@+id/tvRecordarcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/tvRecordarcontraseña"
+        android:textColor="@color/azul"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="#84A59D"
+        android:onClick="IrMenu"
+        android:text="@string/btnIngresar"
+        android:textAlignment="center"
+        android:textColor="#F5F5F5"
+        android:textColorLink="#84A59D"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/tvRegistrarse"
+        android:textColor="@color/azul"
+        android:textSize="16dp" />
+
+</LinearLayout>

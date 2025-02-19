@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FoodyBurguer</string>
+    <string name="tvIniciodesesion">Inicia sesión</string>
+    <string name="tvCorreo">Correo:</string>
+    <string name="etCorreo">gssarfgds@gmail.com</string>
+    <string name="tvContraseña">Contraseña: </string>
+    <string name="etContraseña">Ingrese la contraseña</string>
+    <string name="tvRecordarcontraseña">¿Olvidaste tu contraseña?</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="tvRegistrarse">Clic aqui para registrase</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="etBuscar">Buscar</string>
+    <string name="tvMenu">Menu:</string>
+    <string name="tvDescrPizzaG">Pizza Grande</string>
+    <string name="tvPrecioPizzaG">$25.000</string>
+    <string name="btnPedir">Pedir</string>
+    <string name="tvDescrEmpanada">Empanada</string>
+    <string name="tvPrecioEmpanada">$5.000</string>
+    <string name="tvDescrCocacola">Cocacola</string>
+    <string name="tvPrecioCocacola">$3.000</string>
+    <string name="tvDescrSandwich">Sandwich</string>
+    <string name="tvPrecioSandwich">$9.000</string>
+    <string name="tvDescrPapas">Porción de papas</string>
+    <string name="tvPrecioPapas">$4.000</string>
+    <string name="tvDescrLimonada">Limonada</string>
+    <string name="tvPrecioLimonada">$4.000</string>
+
+    <string name="tvTituloOfertas">Ofertas del Dia:</string>
+    <string name="tvDescrCombHambPapas">Combo de Hamburguesa con papas</string>
+    <string name="tvPrecioHambPapas">$30.000</string>
+    <string name="tvDescrCombEmpana">Combo 3 Empanadas por tan solo: </string>
+    <string name="tvPrecioCombEmpana">$10.000</string>
+    <string name="tvDescrCombLatacola">Lata de Cocacola por tan solo:</string>
+    <string name="tvPrecioCombLatacola">$2.000</string>
+    <string name="tvDescrCombChor">Combo de chorizo a la parrilla</string>
+    <string name="tvPrecioCombChor">$20.000</string>
+    <string name="tvDescrCombPapas">Combo de Cinco porciones de papas por tan solo:</string>
+    <string name="tvPrecioCombPapas">$15.000</string>
+    <string name="tvDescrCombHamburguesa">Hamburguesa doble carne con bedida</string>
+    <string name="tvPrecioCombHamburguesa">$24.000</string>
+
+    <string name="tvTituloOrdenes">Mis pedidos</string>
+    <string name="btnMesa">Seleccione la mesa</string>
+    <string name="btnSolicitarPedido">Solicitar Pedido</string>
+
+    <string name="tvCerrarsesion">Cerrar sesion</string>
+    <string name="tvOrdenesCompra">Órdenes de Compra</string>
+    <string name="tvFoodyBurguer">FoodyBurguer</string>
+    <string name="tvAyuda">Ayuda</string>
+
+
+
+</resources>
