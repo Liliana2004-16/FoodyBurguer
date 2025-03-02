@@ -1,65 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".OrdenesFragment"
-    android:orientation="vertical"
-    android:background="@color/blanco_fondo"
-    >
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/pink"
-        android:padding="30dp">
-        <TextView
-            android:id="@+id/tvTituloOrdenes"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/tvTituloOrdenes"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            android:textColor="@color/Blanco"
-            />
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="100dp">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MisPedidos"
+        android:padding="16dp">
+
+        <!-- Imagen de la oferta -->
+        <ImageView
+            android:id="@+id/ivOrderOffer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1sanwich" />
+
+        <!-- Descripción de la oferta -->
+        <TextView
+            android:id="@+id/tvOrderDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción de la oferta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/tvOrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="4dp" />
+
+        <!-- Estado (inicialmente "Pendiente") -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendiente"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Sección para cantidad con botón "+" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Spinner para selección de mesa -->
+        <Spinner
+            android:id="@+id/spinnerMesas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para solicitar el pedido -->
+        <Button
+            android:id="@+id/btnSolicitarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar Pedido"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
     </LinearLayout>
-
-    <Button
-
-        android:id="@+id/btnMesa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="160dp"
-        android:backgroundTint="@color/Blanco"
-        android:text="@string/btnMesa"
-        android:textColor="@color/azul"
-        android:textColorLink="@color/azul"
-        android:textSize="20dp"
-        app:strokeColor="@color/azul"
-       />
-
-    <Button
-        android:id="@+id/btnSolicitarPedido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginRight="80dp"
-        android:backgroundTint="@color/pink"
-        android:text="@string/btnSolicitarPedido" />
-
-</LinearLayout>
+</ScrollView>

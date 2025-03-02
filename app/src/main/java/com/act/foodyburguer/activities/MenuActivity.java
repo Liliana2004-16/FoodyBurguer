@@ -1,15 +1,16 @@
-package com.act.foodyburguer;
+package com.act.foodyburguer.activities;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
+
+import com.act.foodyburguer.fragments.HomeFragment;
+import com.act.foodyburguer.fragments.OrdenesFragment;
+import com.act.foodyburguer.fragments.PerfilFragment;
+import com.act.foodyburguer.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MenuActivity extends AppCompatActivity {
@@ -50,5 +51,6 @@ public class MenuActivity extends AppCompatActivity {
 
 
         });
+
     }
 }
